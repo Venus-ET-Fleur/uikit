@@ -1,9 +1,14 @@
 // 1. Your custom variables and variable overwrites.
-// ex. @import "theme/alert.scss";
+$global-font-family: "sofia-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-primary-background: #e4b77d !default;
 $breakpoint-medium: 1024px;
-$global-primary-background: #e4b77d;
 
 @import "theme/breadcrumb.scss";
+@import "theme/iconnav.scss";
+@import "theme/nav.scss";
+@import "theme/navbar.scss";
+@import "theme/offcanvas.scss";
+@import "theme/tooltip.scss";
 @import "theme/tile.scss";
 
 // 2. Import default variables and available mixins.
@@ -12,8 +17,12 @@ $global-primary-background: #e4b77d;
 
 // 3. Your custom mixin overwrites.
 @import "theme/breadcrumb-mixins.scss";
+@import "theme/label-mixins.scss";
 @import "theme/link-mixins.scss";
+@import "theme/navbar-mixins.scss";
+@import "theme/nav-mixins.scss";
 @import "theme/tile-mixins.scss";
+@import "theme/utility-mixins.scss";
 
 // 4. Import UIkit.
 @import "src/scss/uikit-theme.scss";

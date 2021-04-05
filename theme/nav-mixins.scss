@@ -1,0 +1,63 @@
+@mixin hook-nav-default() { 
+    font-family: $global-font-family; 
+}
+
+@mixin hook-nav-header() {
+    letter-spacing: .5px;
+    white-space: nowrap; 
+}
+
+@mixin hook-nav-default-item() {
+    letter-spacing: .5px;
+}
+
+@mixin hook-nav-misc() {
+    .uk-nav-default .uk-parent > a { 
+        color: $nav-default-header-color; 
+        text-transform: uppercase; 
+    }
+
+    .uk-nav-default > li > a { 
+        color: $nav-default-header-color; 
+        text-transform: uppercase; 
+    }
+
+    .uk-nav-sub ul { 
+        padding-left: $nav-sublist-deeper-padding-left; 
+    }
+
+    .uk-nav-default .uk-nav-sub > a {
+        letter-spacing: .5px;
+        color: #353535; 
+        font-size: 16px;
+    }
+
+    .uk-nav-header-main {
+        letter-spacing: .5px;
+    }
+
+    @media (max-width: 1200px) {
+        .uk-nav-default > li > a { 
+            padding: 10px 0px;
+        }
+    }
+
+    /*
+    * Left-most column on dropdowns
+    */
+    .uk-nav-header-main {
+        padding: 5px 0px; 
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+    }
+
+    .uk-nav-header-main a:hover {
+        color: #E4B77D !important;
+    }
+
+    .uk-nav-header-main:first-child {
+        padding-top: 10px;
+    }
+
+}
