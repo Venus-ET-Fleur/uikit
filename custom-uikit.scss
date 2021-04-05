@@ -1,12 +1,19 @@
 // 1. Your custom variables and variable overwrites.
 // ex. @import "theme/alert.scss";
+$breakpoint-medium: 1024px;
+$global-primary-background: #e4b77d;
+
+@import "theme/breadcrumb.scss";
+@import "theme/tile.scss";
 
 // 2. Import default variables and available mixins.
 @import "src/scss/variables-theme.scss";
 @import "src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
+@import "theme/breadcrumb-mixins.scss";
 @import "theme/link-mixins.scss";
+@import "theme/tile-mixins.scss";
 
 // 4. Import UIkit.
 @import "src/scss/uikit-theme.scss";
